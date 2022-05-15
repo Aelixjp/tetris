@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script type = "module" src="scripts/script.js"></script>
+	<title>Tetris</title>
+</head>
+<body>
+	
+	<div class="tetris">
+		<canvas id="canvas" width = "390" height="720"></canvas>
+		<div class="asideInfo">
+				
+			<img src="images/tetris_logo.png" alt="Tetris logo.png" class= "tetris_logo">
+			<div class = "containerP spaced20">
+
+				<div class="NEXT">
+					<p>NEXT:</p>
+					<canvas id="nextShape" class = "squareNewShape" width = "150" height="150"></canvas>
+				</div>
+				<div class="SAVED">
+					<p>SPOT: </p>
+					<canvas id="fichaGuardada" width = "150" height="150" class = "fichaGuardada"></canvas>
+				</div>
+			</div>
+			<div class="containerInfo">
+				<div class="mejorPuntuacion">MEJOR PUNTUACION: </div>
+				<div class="bestPoints">0</div>
+				<br>
+				<br>
+				<div class="mensajePuntos">PUNTOS: </div>
+				<div id="points" class="points">0</div>
+				
+			</div>
+
+		</div>
+	</div>
+	<audio id = "tetris_sound" src="sounds/tetris_song.wav" type="audio/mpeg" preload = "auto"></audio>
+
+</body>
+</html>
